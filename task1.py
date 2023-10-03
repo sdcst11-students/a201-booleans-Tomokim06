@@ -19,17 +19,19 @@ The number is 100
 Enter a number: 102
 The number is larger than 100
 """
-question = "Enter number:"
-print(input(question))
-TheNumberIsLargerThan100 = True
-TheNumberIs100 = False
-TheNumberIsLessThan100 = False
 
-if TheNumberIsLargerThan100:
-    print("The number is larger than 100")
 
-if TheNumberIs100:
+question = "Enter a number:"
+a = input(question)
+a = float(a)
+
+if a == 100:
     print("The number is 100")
 
-if TheNumberIsLessThan100:
-    print("The number is less than 100")
+if a < 100:
+    print("The number is smaller than 100")
+
+if a > 100:
+    print("The number is bigger than 100")
+
+
